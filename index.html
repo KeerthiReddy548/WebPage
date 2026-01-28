@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+nav a:hover {
+    color: #4CAF50;
+}
+
+
+.myClass {
+    height: 80vh;
+    background: linear-gradient(to right, #4CAF50, #2e7d32);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.myClass h1 {
+    font-size: 3rem;
+    animation: fadeDown 1.2s;
+}
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+section {
+    background: white;
+    padding: 50px 10%;
+    margin-top: 20px;
+}
+section h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+
+.about {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about img {
+    width: 180px;
+    border-radius: 50%;
+}
+.about p {
+    line-height: 1.6;
+}
+
+
+.skills ul {
+    list-style: none;
+}
+.skills li {
+    background: #e8f5e9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.certificates img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.certificates img:hover {
+    transform: scale(1.05);
+}
+
+.hobbies ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+.hobbies li {
+    background: #f1f8e9;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+
+<header>
+    <h2>MyPortfolio</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#hobbies">Hobbies</a>
+    </nav>
+</header>
+
+
+<div class="myClass">
+    <div>
+        <h1>Hello, I'm Keerthi</h1>
+        <p>Aspiring Frontend Developer</p>
+    </div>
+</div>
+
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+        <img src="https://th.bing.com/th/id/OIP.AySZ_EZyAcymiXeKFw4hPQHaEK?w=271&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Profile Photo" width="180">
+
+
+
+        <div>
+            <p>
+                I am a frontend enthusiast who enjoys building clean and interactive
+                user interfaces using modern web technologies.
+            </p>
+            <p>
+                💻 HTML, CSS, JavaScript, Java  
+                <br>India  
+                <br>UI / Frontend Developer
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+    </ul>
+</section>
+<section id="certificates">
+    <h2>My Certificates</h2>
+    <div class="certificates">
+        <a href="https://recw.codetantra.com/cert/certificate.jsp?certId=CT1565-tp6WD9y-cJ"
+
+ target="_blank">Core Java</a>
+        <a href="https://drive.google.com/file/d/1bffLTUnlBWjQoxTsRtIcMvp5eir0q53x/view?usp=sharing"
+
+
+ target="_blank">Data Structures and Algorithms</a>
+        
+        <a href="https://drive.google.com/file/d/1DC6QNHsX_Xb-53kNmeyAwpNYUdInDEr7/view?usp=sharing
+
+">Web Development</a>
+    </div>
+</section>
+
+<section id="hobbies" class="hobbies">
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Music</li>
+        <li>Coding</li>
+        <li>Cooking</li>
+    </ul>
+</section>
+
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:gandhamkeerthireddy@gmail.com">gandhamkeerthireddy@gmail.com</a></p>
+    <p>Phone: 7676104463</p>
+    <p>Location: India</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/gandham-keerthireddy-976907320" target="_blank">https://www.linkedin.com/in/gandham-keerthireddy-976907320</a></p>
+</section>
+
+
+
+<footer>
+    <p>&copy; 2026 Keerthi. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
